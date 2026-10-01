@@ -92,11 +92,11 @@
 
     [data-theme="light"] {
       /* Chafun Gate Schools Ambient Light (Sky Ice, Royal Navy & Solar Crimson Accents) */
-      --bg-canvas: #f0f5fc;
-      --bg-surface: #ffffff;
-      --bg-surface-subtle: #e2edfb;
-      --bg-surface-elevated: #ffffff;
-      --bg-surface-hover: #d3e4f8;
+      --bg-canvas: #e6edf7;
+      --bg-surface: #f4f7fc;
+      --bg-surface-subtle: #dbe4f3;
+      --bg-surface-elevated: #f4f7fc;
+      --bg-surface-hover: #cbdff7;
 
       --border-subtle: #dbe7f5;
       --border-medium: #bad0ec;
@@ -1263,7 +1263,7 @@
     }
 
     .user-status-dot {
-      color: var(--primary);
+      color: var(--success);
       font-size: 0.75rem;
       line-height: 1;
     }
@@ -1298,41 +1298,6 @@
     }
 
     @media (max-width: 900px) {
-      .navbar {
-        width: calc(100% - 1rem);
-        padding: 0.45rem 0.75rem;
-        border-radius: var(--radius-lg);
-        display: flex;
-        flex-wrap: wrap;
-        gap: 0.45rem;
-      }
-      .nav-left {
-        order: 1;
-        flex: 1;
-      }
-      .nav-user-actions {
-        order: 2;
-        gap: 0.35rem;
-      }
-      .nav-center {
-        order: 3;
-        width: 100%;
-      }
-      .smart-section-btn {
-        width: 100%;
-        justify-content: space-between;
-      }
-      .smart-sections-menu {
-        left: 0;
-        transform: translateX(0) translateY(-6px);
-        width: 100%;
-      }
-      .smart-sections-menu.open {
-        transform: translateX(0) translateY(0);
-      }
-    }
-
-    @media (max-width: 640px) {
       .navbar {
         width: calc(100% - 1rem);
         margin: 0.5rem auto;
@@ -3526,7 +3491,7 @@
        LOGIN VIEW (Bookstore Concept: Cream Paper, Oxblood & Midnight Leather)
        One hardcoded librarian credential stored in localStorage
        ========================================================================== -->
-  <div id="login-view">
+  <div id="login-view" style="display: none;">
     <div class="login-card">
       <div class="login-card-left">
         <div class="login-school-emblem" style="text-align: center; margin-bottom: 1.25rem;">
@@ -3728,7 +3693,7 @@
           <span id="current-user-display" class="user-name">Librarian</span>
         </div>
 
-        <button type="button" class="btn btn-secondary btn-sm nav-logout-btn" id="btn-logout" title="Sign out of the system">
+        <button type="button" class="nav-action-btn nav-logout-btn" id="btn-logout" title="Sign out of the system">
           <svg class="skeu-icon" width="14" height="14"><use href="#skeu-logout"/></svg>
           <span class="nav-btn-text">Logout</span>
         </button>
