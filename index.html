@@ -1351,7 +1351,27 @@
         display: flex;
         align-items: center;
         gap: 0.3rem;
-        flex-wrap: wrap;
+        flex-wrap: nowrap;
+        overflow-x: auto;
+        scrollbar-width: none;
+        width: 100%;
+        padding-bottom: 2px;
+      }
+      .nav-user-actions::-webkit-scrollbar {
+        display: none;
+      }
+      .theme-dropdown-menu {
+        position: fixed;
+        top: 3.5rem;
+        left: 50%;
+        transform: translateX(-50%) translateY(-6px);
+        width: 90vw;
+        max-width: 320px;
+        right: auto;
+      }
+      .theme-dropdown-menu.open,
+      .theme-dropdown-menu.show {
+        transform: translateX(-50%) translateY(0);
       }
       .nav-action-btn,
       .user-pill,
@@ -1609,6 +1629,7 @@
 
     .table-overdue {
       width: 100%;
+      min-width: 800px;
       border-collapse: collapse;
       font-size: 0.875rem;
     }
@@ -1813,6 +1834,7 @@
 
     table.data-table {
       width: 100%;
+      min-width: 800px;
       border-collapse: collapse;
       text-align: left;
       font-size: 0.875rem;
