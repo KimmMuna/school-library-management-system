@@ -1,0 +1,6 @@
+{
+  "name": "Chafun Gate Schools Library",
+  "description": "Official Library Management System for Chafun Gate Schools, featuring catalog volumes, student membership, borrowing ledgers, and ambient reading themes.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

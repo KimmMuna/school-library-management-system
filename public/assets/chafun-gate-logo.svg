@@ -1,0 +1,151 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 550" width="100%" height="100%">
+  <defs>
+    <!-- Smooth circular path for top text "CHAFUN GATE SCHOOLS" -->
+    <path id="crest-text-path" d="M 125,240 A 175,175 0 0,1 475,240" fill="none" />
+    
+    <!-- Smooth arched path for bottom ribbon text "Knowledge is Light" -->
+    <path id="ribbon-text-path" d="M 100,430 Q 300,390 500,430" fill="none" />
+
+    <!-- Subtle drop shadow for depth -->
+    <filter id="logo-drop-shadow" x="-10%" y="-10%" width="120%" height="125%" filterUnits="userSpaceOnUse">
+      <feDropShadow dx="0" dy="4" stdDeviation="6" flood-color="#0a122c" flood-opacity="0.25" />
+    </filter>
+  </defs>
+
+  <!-- ==========================================
+       MAIN CIRCULAR CREST
+       ========================================== -->
+  <g filter="url(#logo-drop-shadow)">
+    <!-- Outer Cyan Ring Border -->
+    <circle cx="300" cy="240" r="225" fill="#00a2e8" />
+    
+    <!-- Primary Royal Blue Outer Ring -->
+    <circle cx="300" cy="240" r="220" fill="#1b3593" />
+    
+    <!-- Inner White Divider Ring -->
+    <circle cx="300" cy="240" r="148" fill="#ffffff" />
+    
+    <!-- Inner Cyan Accent Ring -->
+    <circle cx="300" cy="240" r="144" fill="#00a2e8" />
+    
+    <!-- Center White Disc Background -->
+    <circle cx="300" cy="240" r="141" fill="#ffffff" />
+  </g>
+
+  <!-- ==========================================
+       ARCYLIC TEXT: "CHAFUN GATE SCHOOLS"
+       ========================================== -->
+  <text fill="#ffffff" font-family="'Plus Jakarta Sans', 'Arial Black', Arial, sans-serif" font-weight="900" font-size="34" letter-spacing="4px">
+    <textPath href="#crest-text-path" startOffset="50%" text-anchor="middle">CHAFUN GATE SCHOOLS</textPath>
+  </text>
+
+  <!-- ==========================================
+       CENTER ARTWORK: RISING SUN & RAYS
+       ========================================== -->
+  <g id="rising-sun-group">
+    <!-- Red Sunburst Rays (7 distinct rays) -->
+    <!-- Center vertical ray -->
+    <polygon points="296,215 304,215 300,105" fill="#ed1c24" />
+    
+    <!-- Left ray 1 (approx -16 deg) -->
+    <polygon points="291,215 299,215 264,115" fill="#ed1c24" />
+    
+    <!-- Left ray 2 (approx -33 deg) -->
+    <polygon points="287,217 294,217 232,142" fill="#ed1c24" />
+    
+    <!-- Left ray 3 (approx -50 deg) -->
+    <polygon points="284,221 290,221 216,183" fill="#ed1c24" />
+    
+    <!-- Right ray 1 (approx +16 deg) -->
+    <polygon points="301,215 309,215 336,115" fill="#ed1c24" />
+    
+    <!-- Right ray 2 (approx +33 deg) -->
+    <polygon points="306,217 313,217 368,142" fill="#ed1c24" />
+    
+    <!-- Right ray 3 (approx +50 deg) -->
+    <polygon points="310,221 316,221 384,183" fill="#ed1c24" />
+
+    <!-- Red Semi-Circular Sun Disc -->
+    <path d="M 264,226 A 36,36 0 0,1 336,226 Z" fill="#ed1c24" />
+  </g>
+
+  <!-- ==========================================
+       CENTER ARTWORK: OPEN BOOK
+       ========================================== -->
+  <g id="open-book-group">
+    <!-- Outer Blue & Cyan Book Backing (Page edges) -->
+    <!-- Left page outer backings -->
+    <path d="M 300,214 C 275,202 245,204 227,212 L 221,296 C 242,286 275,286 300,305 Z" fill="#00a2e8" />
+    <path d="M 300,217 C 276,206 248,208 231,215 L 226,293 C 245,284 276,285 300,301 Z" fill="#1b3593" />
+    <path d="M 300,220 C 278,210 252,212 235,218 L 230,289 C 248,282 277,283 300,298 Z" fill="#ffffff" />
+
+    <!-- Right page outer backings -->
+    <path d="M 300,214 C 325,202 355,204 373,212 L 379,296 C 358,286 325,286 300,305 Z" fill="#00a2e8" />
+    <path d="M 300,217 C 324,206 352,208 369,215 L 374,293 C 355,284 324,285 300,301 Z" fill="#1b3593" />
+    <path d="M 300,220 C 322,210 348,212 365,218 L 370,289 C 352,282 323,283 300,298 Z" fill="#ffffff" />
+
+    <!-- Main Open White Pages with crisp black linework -->
+    <!-- Left Leaf -->
+    <path d="M 300,223 C 280,213 258,215 241,222 L 237,284 C 255,277 279,278 300,294 Z" fill="#ffffff" stroke="#111827" stroke-width="2.2" stroke-linejoin="round" />
+    <!-- Left leaf inner perspective lines -->
+    <path d="M 297,233 C 280,224 262,226 248,232" fill="none" stroke="#111827" stroke-width="1.2" stroke-linecap="round" />
+    <path d="M 296,243 C 280,234 263,236 249,242" fill="none" stroke="#111827" stroke-width="1.2" stroke-linecap="round" />
+    <path d="M 296,253 C 280,244 264,246 250,252" fill="none" stroke="#111827" stroke-width="1.2" stroke-linecap="round" />
+
+    <!-- Right Leaf -->
+    <path d="M 300,223 C 320,213 342,215 359,222 L 363,284 C 345,277 321,278 300,294 Z" fill="#ffffff" stroke="#111827" stroke-width="2.2" stroke-linejoin="round" />
+    <!-- Right leaf inner perspective lines -->
+    <path d="M 303,233 C 320,224 338,226 352,232" fill="none" stroke="#111827" stroke-width="1.2" stroke-linecap="round" />
+    <path d="M 304,243 C 320,234 337,236 351,242" fill="none" stroke="#111827" stroke-width="1.2" stroke-linecap="round" />
+    <path d="M 304,253 C 320,244 336,246 350,252" fill="none" stroke="#111827" stroke-width="1.2" stroke-linecap="round" />
+
+    <!-- Book Center Spine Ridge -->
+    <line x1="300" y1="223" x2="300" y2="295" stroke="#111827" stroke-width="2.4" stroke-linecap="round" />
+  </g>
+
+  <!-- ==========================================
+       CYAN CALLIGRAPHIC WAVE SWOOSHES (under book)
+       ========================================== -->
+  <g id="decorative-waves">
+    <!-- Left Swoosh Wave -->
+    <path d="M 172,305 C 205,326 252,324 290,306" fill="none" stroke="#00a2e8" stroke-width="4.5" stroke-linecap="round" />
+    <!-- Right Swoosh Wave -->
+    <path d="M 428,305 C 395,326 348,324 310,306" fill="none" stroke="#00a2e8" stroke-width="4.5" stroke-linecap="round" />
+  </g>
+
+  <!-- ==========================================
+       BOTTOM FLOWING BANNER RIBBON ("Knowledge is Light")
+       ========================================== -->
+  <g id="banner-ribbon-group" filter="url(#logo-drop-shadow)">
+    <!-- 1. Left Ribbon Tail (Behind) with Swallowtail notch -->
+    <!-- Darker blue underside fold -->
+    <polygon points="85,385 110,405 85,420" fill="#0f1f58" />
+    <!-- Left Swallowtail Ribbon Tail -->
+    <path d="M 98,395 L 35,432 L 68,485 L 8,460 L 32,535 L 115,485 L 105,425 Z" fill="#1b3593" stroke="#00a2e8" stroke-width="3" stroke-linejoin="round" />
+    
+    <!-- 2. Right Ribbon Tail (Behind) with Swallowtail notch -->
+    <!-- Darker blue underside fold -->
+    <polygon points="515,385 490,405 515,420" fill="#0f1f58" />
+    <!-- Right Swallowtail Ribbon Tail -->
+    <path d="M 502,395 L 565,432 L 532,485 L 592,460 L 568,535 L 485,485 L 495,425 Z" fill="#1b3593" stroke="#00a2e8" stroke-width="3" stroke-linejoin="round" />
+
+    <!-- 3. Main Sweeping Front Ribbon Banner -->
+    <!-- Outer Cyan Border for Banner -->
+    <path d="M 68,390 C 205,348 395,348 532,390 L 522,468 C 390,422 210,422 78,468 Z" fill="#00a2e8" />
+    <!-- Primary Royal Blue Banner Surface -->
+    <path d="M 72,394 C 206,352 394,352 528,394 L 518,464 C 389,418 211,418 82,464 Z" fill="#1b3593" stroke="#ffffff" stroke-width="1.8" stroke-linejoin="round" />
+
+    <!-- Banner Edge Highlights -->
+    <path d="M 75,397 C 207,356 393,356 525,397" fill="none" stroke="#00a2e8" stroke-width="2.5" />
+    <path d="M 85,461 C 212,416 388,416 515,461" fill="none" stroke="#00a2e8" stroke-width="2.5" />
+  </g>
+
+  <!-- ==========================================
+       BANNER TEXT: "Knowledge is Light"
+       ========================================== -->
+  <!-- Arched text path matching the banner curvature -->
+  <path id="banner-text-curve" d="M 85,446 C 215,402 385,402 515,446" fill="none" />
+  <text fill="#ffffff" font-family="'Plus Jakarta Sans', Arial, sans-serif" font-weight="800" font-size="34px">
+    <textPath href="#banner-text-curve" startOffset="50%" text-anchor="middle">Knowledge is Light</textPath>
+  </text>
+</svg>

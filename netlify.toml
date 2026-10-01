@@ -1,0 +1,15 @@
+[build]
+  # Publish the root directory containing index.html and assets/
+  publish = "."
+
+# Ensure single-page routing resolves cleanly to index.html
+[[redirects]]
+  from = "/*"
+  to = "/index.html"
+  status = 200
+
+# Cache static SVGs and assets efficiently
+[[headers]]
+  for = "/assets/*"
+  [headers.values]
+    Cache-Control = "public, max-age=31536000, immutable"
